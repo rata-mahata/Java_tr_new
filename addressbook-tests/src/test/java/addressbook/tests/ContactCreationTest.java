@@ -1,5 +1,6 @@
-package addressbook;
+package addressbook.tests;
 
+import addressbook.model.ContactData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.firefox.FirefoxDriver;
