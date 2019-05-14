@@ -27,7 +27,10 @@ public class GroupHelper extends HelperBase {
     }
 
     public void deleteSelectedGroups() {
-        click(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='test1'])[8]/following::input[2]"));
+        //click(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='test1'])[8]/following::input[2]"));
+
+            click(By.name("delete"));
+
     }
 
     public void selectGroups() {
@@ -41,4 +44,8 @@ public class GroupHelper extends HelperBase {
     public void submitGroupModification() {
         click(By.name("update"));
     }
+
+    public int getGroupCount() {
+        return driver.findElements(By.name("selected[]")).size();
+            }
 }

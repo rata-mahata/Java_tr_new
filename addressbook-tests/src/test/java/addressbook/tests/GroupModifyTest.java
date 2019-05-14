@@ -1,6 +1,7 @@
 package addressbook.tests;
 
 import addressbook.model.GroupData;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
@@ -8,10 +9,13 @@ public class GroupModifyTest extends TestBase{
     @Test
     private void testGroupModification(){
         app.getNavigationHelper().gotoGroupPage();
+        int before = app.getGroupHelper().getGroupCount();
         app.getGroupHelper().selectGroups();
         app.getGroupHelper().initGroupModification();
         app.getGroupHelper().fillGroupForm(new GroupData("test1", "test22", "test33"));
         app.getGroupHelper().submitGroupModification();
         app.getNavigationHelper().gotoGroupPage();
+        int after = app.getGroupHelper().getGroupCount();
+        Assert.assertEquals(before, after);
     }
 }
