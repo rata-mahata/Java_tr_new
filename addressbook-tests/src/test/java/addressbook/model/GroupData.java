@@ -5,7 +5,7 @@ public class GroupData {
     private final String head;
     private final String footer;
 
-    public GroupData(String name, String head, String footer) { //это конструктор кот инициализирует объект значениями)
+    public GroupData(String name, String head, String footer) { //constructor that initializes an object by values)
         this.name = name;
         this.head = head;
         this.footer = footer;
@@ -13,7 +13,7 @@ public class GroupData {
 
     public String getName() {
         return name;
-    } //методы кот возвращают артибуты
+    } //methods that return attributes
 
     public String getHead() {
         return head;

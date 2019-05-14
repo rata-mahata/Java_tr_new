@@ -14,7 +14,7 @@ import static org.openqa.selenium.remote.BrowserType.*;
 
 public class ApplicationManager {
 
-    WebDriver driver; //это attribute объекта типа GroupCreationTest
+    WebDriver driver; //this is attribute of object of type GroupCreationTest
     private NavigationHelper navigationHelper;
     private GroupHelper groupHelper;
     private SessionHelper sessionHelper;
